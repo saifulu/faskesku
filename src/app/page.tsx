@@ -412,6 +412,148 @@ export default function Home() {
       </section>
 
       {/* Download Section */}
+      {/* Numpang Server Section */}
+      <section id="numpang-server" className="py-16 bg-gradient-to-r from-blue-600 to-green-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+              Numpang Server
+            </h2>
+            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Bagi yang tidak mau ribet dengan mengelola sendiri servernya, disini menerangkan numpang server di tempat kita dengan beberapa fasilitas.
+            </p>
+          </div>
+          
+          {/* Server Hosting Features */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Keamanan Terjamin</h3>
+              <p className="text-blue-100 text-sm">Server dengan keamanan tingkat enterprise dan backup otomatis</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Monitor className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Monitoring 24/7</h3>
+              <p className="text-blue-100 text-sm">Pemantauan server dan aplikasi secara real-time</p>
+            </div>
+            <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
+              <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <Users className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-white mb-2">Support Teknis</h3>
+              <p className="text-blue-100 text-sm">Tim support siap membantu kapan saja dibutuhkan</p>
+            </div>
+          </div>
+
+          {/* Registration Form */}
+          <div className="bg-white/10 backdrop-blur rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-white text-center mb-6">
+              Daftar Numpang Server
+            </h3>
+            <form className="max-w-2xl mx-auto space-y-6">
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Nama Klinik/Praktek
+                  </label>
+                  <input 
+                    type="text" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    placeholder="Masukkan nama klinik"
+                  />
+                </div>
+                <div>
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Nama Dokter
+                  </label>
+                  <input 
+                    type="text" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    placeholder="Masukkan nama dokter"
+                  />
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Email
+                  </label>
+                  <input 
+                    type="email" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div>
+                  <label className="block text-white text-sm font-medium mb-2">
+                    Nomor Telepon
+                  </label>
+                  <input 
+                    type="tel" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    placeholder="08xxxxxxxxxx"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-white text-sm font-medium mb-2">
+                  Alamat Klinik
+                </label>
+                <textarea 
+                  rows={3}
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none" 
+                  placeholder="Masukkan alamat lengkap klinik"
+                ></textarea>
+              </div>
+
+              <div>
+                <label className="block text-white text-sm font-medium mb-2">
+                  Estimasi Jumlah Pasien per Hari
+                </label>
+                <select className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white focus:outline-none focus:ring-2 focus:ring-white/50">
+                  <option value="" className="text-gray-800">Pilih estimasi pasien</option>
+                  <option value="1-10" className="text-gray-800">1-10 pasien</option>
+                  <option value="11-25" className="text-gray-800">11-25 pasien</option>
+                  <option value="26-50" className="text-gray-800">26-50 pasien</option>
+                  <option value="50+" className="text-gray-800">Lebih dari 50 pasien</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-white text-sm font-medium mb-2">
+                  Catatan Tambahan (Opsional)
+                </label>
+                <textarea 
+                  rows={3}
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none" 
+                  placeholder="Kebutuhan khusus atau pertanyaan lainnya"
+                ></textarea>
+              </div>
+
+              <div className="text-center">
+                <button 
+                  type="submit" 
+                  className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center gap-2 mx-auto"
+                >
+                  <Users className="w-5 h-5" />
+                  Daftar Numpang Server
+                </button>
+                <p className="text-blue-100 text-sm mt-4">
+                  Tim kami akan menghubungi Anda dalam 1x24 jam untuk proses selanjutnya
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      {/* Download Section */}
       <section id="download" className="py-16 bg-gradient-to-r from-blue-600 to-green-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
