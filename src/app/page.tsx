@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Download, Shield, Users, Clock, CheckCircle, Star, Menu, Moon, Sun, Code, Heart, Globe, Github, FileText, Activity, Calendar, Stethoscope, Monitor, Database } from "lucide-react";
+import { Download, Shield, Users, Clock, CheckCircle, Star, Menu, Moon, Sun, Code, Heart, Globe, Github, FileText, Activity, Calendar, Stethoscope, Monitor, Database, MessageCircle } from "lucide-react";
 
 export default function Home() {
   return (
@@ -43,7 +43,7 @@ export default function Home() {
                 Rekam Medis Digital
               </h1>
               <p className="mt-6 text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-                Solusi rekam medis elektronik gratis dan open source untuk klinik dokter dan praktek mandiri. 
+                Solusi rekam medis elektronik gratis dan open source untuk FKTP (Puskesmas, Klinik, Dokter, dan Praktek Mandiri). 
                 Kelola data pasien, jadwal konsultasi, dan riwayat medis dengan mudah dan aman. 
                 Sistem yang dapat disesuaikan dengan kebutuhan praktek Anda untuk meningkatkan efisiensi pelayanan kesehatan.
               </p>
@@ -413,13 +413,13 @@ export default function Home() {
 
       {/* Download Section */}
       {/* Numpang Server Section */}
-      <section id="numpang-server" className="py-16 bg-gradient-to-r from-blue-600 to-green-600">
+      <section id="numpang-server" className="py-16 bg-gradient-to-r from-purple-600 to-pink-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Numpang Server
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            <p className="text-xl text-purple-100 mb-8 max-w-2xl mx-auto">
               Bagi yang tidak mau ribet dengan mengelola sendiri servernya, disini menerangkan numpang server di tempat kita dengan beberapa fasilitas.
             </p>
           </div>
@@ -431,21 +431,21 @@ export default function Home() {
                 <Shield className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Keamanan Terjamin</h3>
-              <p className="text-blue-100 text-sm">Server dengan keamanan tingkat enterprise dan backup otomatis</p>
+              <p className="text-purple-100 text-sm">Server dengan keamanan tingkat enterprise dan backup otomatis</p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Monitor className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Monitoring 24/7</h3>
-              <p className="text-blue-100 text-sm">Pemantauan server dan aplikasi secara real-time</p>
+              <p className="text-purple-100 text-sm">Pemantauan server dan aplikasi secara real-time</p>
             </div>
             <div className="bg-white/10 backdrop-blur rounded-xl p-6 text-center">
               <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mx-auto mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Support Teknis</h3>
-              <p className="text-blue-100 text-sm">Tim support siap membantu kapan saja dibutuhkan</p>
+              <p className="text-purple-100 text-sm">Tim support siap membantu kapan saja dibutuhkan</p>
             </div>
           </div>
 
@@ -462,7 +462,7 @@ export default function Home() {
                   </label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
                     placeholder="Masukkan nama klinik"
                   />
                 </div>
@@ -472,7 +472,7 @@ export default function Home() {
                   </label>
                   <input 
                     type="text" 
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
                     placeholder="Masukkan nama dokter"
                   />
                 </div>
@@ -485,7 +485,7 @@ export default function Home() {
                   </label>
                   <input 
                     type="email" 
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
                     placeholder="email@example.com"
                   />
                 </div>
@@ -495,7 +495,7 @@ export default function Home() {
                   </label>
                   <input 
                     type="tel" 
-                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
+                    className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white/50" 
                     placeholder="08xxxxxxxxxx"
                   />
                 </div>
@@ -507,7 +507,7 @@ export default function Home() {
                 </label>
                 <textarea 
                   rows={3}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none" 
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none" 
                   placeholder="Masukkan alamat lengkap klinik"
                 ></textarea>
               </div>
@@ -531,7 +531,7 @@ export default function Home() {
                 </label>
                 <textarea 
                   rows={3}
-                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none" 
+                  className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-white/50 resize-none" 
                   placeholder="Kebutuhan khusus atau pertanyaan lainnya"
                 ></textarea>
               </div>
@@ -539,12 +539,12 @@ export default function Home() {
               <div className="text-center">
                 <button 
                   type="submit" 
-                  className="bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center gap-2 mx-auto"
+                  className="bg-white text-purple-600 px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-200 flex items-center gap-2 mx-auto"
                 >
                   <Users className="w-5 h-5" />
                   Daftar Numpang Server
                 </button>
-                <p className="text-blue-100 text-sm mt-4">
+                <p className="text-purple-100 text-sm mt-4">
                   Tim kami akan menghubungi Anda dalam 1x24 jam untuk proses selanjutnya
                 </p>
               </div>
@@ -584,6 +584,41 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp Buttons */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        {/* WhatsApp Button 1 */}
+        <a 
+          href="https://wa.me/6285229572326?text=Halo,%20saya%20tertarik%20dengan%20FASKESKU" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+        >
+          {/* WhatsApp Logo SVG */}
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+          </svg>
+          <span className="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Hubungi Kami (1)
+          </span>
+        </a>
+        
+        {/* WhatsApp Button 2 */}
+        <a 
+          href="https://wa.me/6282241896669?text=Halo,%20saya%20tertarik%20dengan%20FASKESKU" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300 flex items-center justify-center group"
+        >
+          {/* WhatsApp Logo SVG */}
+          <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+          </svg>
+          <span className="absolute right-full mr-3 bg-gray-900 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Hubungi Kami (2)
+          </span>
+        </a>
+      </div>
 
       {/* Footer */}
       <footer id="contact" className="bg-gray-900 dark:bg-black text-white py-12">
